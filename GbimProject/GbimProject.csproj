@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="InputSimulator" Version="1.0.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.6.1" />
+    <PackageReference Include="coverlet.collector" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Selenium.Support" Version="4.9.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="114.0.5735.1600" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="appManager\PreProjectStage\DesignStage\" />
+    <Folder Include="appManager\PreProjectStage\PreProjectStage\EngineeringSurvey\" />
+    <Folder Include="tests\Project\DesignStage\" />
+    <Folder Include="tests\Project\PreProjectStage\EngineeringSurvey\" />
+    <Folder Include="tests\Project\PreProjectStage\FeasibilityStudy\WorkingGroup\Create\" />
+    <Folder Include="tests\Project\PreProjectStage\FeasibilityStudy\WorkingGroup\Choose\" />
+  </ItemGroup>
+
+</Project>

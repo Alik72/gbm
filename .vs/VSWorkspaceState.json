@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\GbimProject",
+    "\\GbimProject\\appManager",
+    "\\GbimProject\\appManager\\PreProjectStage",
+    "\\GbimProject\\appManager\\PreProjectStage\\PreProjectStage",
+    "\\GbimProject\\appManager\\PreProjectStage\\PreProjectStage\\FeasibilityStudy",
+    "\\GbimProject\\tests",
+    "\\GbimProject\\tests\\Project",
+    "\\GbimProject\\tests\\Project\\PreProjectStage",
+    "\\GbimProject\\tests\\Project\\PreProjectStage\\FeasibilityStudy",
+    "\\GbimProject\\tests\\Project\\PreProjectStage\\FeasibilityStudy\\WorkingGroup"
+  ],
+  "SelectedNode": "\\GbimProject\\tests\\Project\\PreProjectStage\\FeasibilityStudy\\WorkingGroup\\ChooseTests.cs",
+  "PreviewInSolutionExplorer": false
+}
