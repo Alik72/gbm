@@ -31,9 +31,9 @@ namespace WebGbimTests
             Type(By.XPath("//input[@type='text']"), date.ProjectCode);
             Click(By.XPath("//div[@id='main-container']/div[2]/gb-edit-project/div/gb-view/div"));
             Click(By.XPath("//div[@id='main-container']/div[2]/gb-edit-project/div/gb-view/div/form/div[2]/div/div"));
-            Type(By.XPath("//div[@id='main-container']/div[2]/gb-edit-project/div/gb-view/div/form/div[2]/div/div/gb-localizable-input/gb-input/div/input"), date.NameRus);
-            Type(By.XPath("//div[@id='main-container']/div[2]/gb-edit-project/div/gb-view/div/form/div[2]/div/div/gb-localizable-input/gb-input[2]/div/input"), date.NameKaz);
-            Type(By.XPath("//div[@id='main-container']/div[2]/gb-edit-project/div/gb-view/div/form/div[2]/div/div/gb-localizable-input/gb-input[3]/div/input"), date.NameEng);
+            Type(By.XPath("//*[@id=\"main-container\"]/div[2]/gb-edit-project/div/gb-view/div/form/div[2]/div/div[1]/gb-localizable-textarea/gb-textarea[1]/div/div[1]/textarea"), date.NameRus);
+            Type(By.XPath("//*[@id=\"main-container\"]/div[2]/gb-edit-project/div/gb-view/div/form/div[2]/div/div[1]/gb-localizable-textarea/gb-textarea[2]/div/div[1]/textarea"), date.NameKaz);
+            Type(By.XPath("//*[@id=\"main-container\"]/div[2]/gb-edit-project/div/gb-view/div/form/div[2]/div/div[1]/gb-localizable-textarea/gb-textarea[3]/div/div[1]/textarea"), date.NameEng);
             ClickSendKeys(By.XPath("//input[@type='search']"), date.SourceFinancing);
             Thread.Sleep(1000);
             Type(By.XPath("//div[@id='main-container']/div[2]/gb-edit-project/div/gb-view/div/form/div[2]/div/div[2]/gb-localizable-textarea/gb-textarea[2]/div/div/textarea"), date.ShortDescriptionKaz);
@@ -43,6 +43,7 @@ namespace WebGbimTests
             Thread.Sleep(1000);
             Type(By.XPath("//div[@id='main-container']/div[2]/gb-edit-project/div/gb-view/div/form/div[2]/div/div[3]/gb-localizable-textarea/gb-textarea[2]/div/div/textarea"), date.DetailedDescriptionKaz);
             ClickSendKeys(By.XPath("//div[@id='main-container']/div[2]/gb-edit-project/div/gb-view/div/form/div[2]/div/div[4]/gb-autocomplete-selectbox/div/p-autocomplete/span/input"), date.ConstructionObject);
+            Thread.Sleep(1000);
             Type(By.XPath("//div[@id='main-container']/div[2]/gb-edit-project/div/gb-view/div/form/div[2]/div/div[3]/gb-localizable-textarea/gb-textarea[3]/div/div/textarea"), date.DetailedDescriptionEng);
             Type(By.XPath("//div[@id='main-container']/div[2]/gb-edit-project/div/gb-view/div/form/div[2]/div/div[3]/gb-localizable-textarea/gb-textarea/div/div/textarea"), date.DetailedDescriptionRus);
 

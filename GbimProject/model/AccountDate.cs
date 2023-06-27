@@ -8,15 +8,12 @@ namespace WebGbimTests
 {
     public class AccountDate
     {
-        public String userezp;
-        public String password;
-
         public AccountDate(String userezp, String password)
         {
-            this.userezp = userezp;
-            this.password = password;
+            Userezp = userezp;
+            Password = password;
         }
-        public string Userezp { get => userezp; set => userezp = value; }
-        public string Password { get => password; set => password = value; }
+        public string Userezp { get; set; }
+        public string Password { get; set; }
     }
 }

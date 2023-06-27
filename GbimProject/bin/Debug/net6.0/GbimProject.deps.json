@@ -13,9 +13,9 @@
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.6.1",
           "NUnit3TestAdapter": "4.5.0",
-          "Selenium.Support": "4.9.1",
-          "Selenium.WebDriver": "4.9.1",
-          "Selenium.WebDriver.ChromeDriver": "114.0.5735.9000",
+          "Selenium.Support": "4.9.0",
+          "Selenium.WebDriver": "4.10.0",
+          "System.Configuration.ConfigurationManager": "8.0.0-preview.5.23280.8",
           "coverlet.collector": "6.0.0"
         },
         "runtime": {
@@ -327,9 +327,9 @@
       },
       "NUnit.Analyzers/3.6.1": {},
       "NUnit3TestAdapter/4.5.0": {},
-      "Selenium.Support/4.9.1": {
+      "Selenium.Support/4.9.0": {
         "dependencies": {
-          "Selenium.WebDriver": "4.9.1"
+          "Selenium.WebDriver": "4.10.0"
         },
         "runtime": {
           "lib/net6.0/WebDriver.Support.dll": {
@@ -338,7 +338,7 @@
           }
         }
       },
-      "Selenium.WebDriver/4.9.1": {
+      "Selenium.WebDriver/4.10.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
@@ -349,8 +349,26 @@
           }
         }
       },
-      "Selenium.WebDriver.ChromeDriver/114.0.5735.9000": {},
-      "System.Reflection.Metadata/1.6.0": {}
+      "System.Configuration.ConfigurationManager/8.0.0-preview.5.23280.8": {
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "8.0.0-preview.5.23280.8"
+        },
+        "runtime": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.28008"
+          }
+        }
+      },
+      "System.Reflection.Metadata/1.6.0": {},
+      "System.Security.Cryptography.ProtectedData/8.0.0-preview.5.23280.8": {
+        "runtime": {
+          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.28008"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -450,26 +468,26 @@
       "path": "nunit3testadapter/4.5.0",
       "hashPath": "nunit3testadapter.4.5.0.nupkg.sha512"
     },
-    "Selenium.Support/4.9.1": {
+    "Selenium.Support/4.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-z77X5gmLkda4/3A/RsnkYwFrJ8RcwoJ+3rtypRTcvK1D+L0ahd3FKhcTPpcUKV4Ez2LcvWcBNjVUFx46vDOInw==",
-      "path": "selenium.support/4.9.1",
-      "hashPath": "selenium.support.4.9.1.nupkg.sha512"
+      "sha512": "sha512-YzLglT1RymLURjlUQ5FjspDwaDRvPS/iEPPcU0DPDi9vSQUhZLgFEn1z6L2RuFQY+1Uo8LSN54awLK3fsB+UTg==",
+      "path": "selenium.support/4.9.0",
+      "hashPath": "selenium.support.4.9.0.nupkg.sha512"
     },
-    "Selenium.WebDriver/4.9.1": {
+    "Selenium.WebDriver/4.10.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GSBwNvJMtSGplGxkx8JLv55DxW5PTwTnRniD0q9G4PA7tcCVa3Hg/8/Jf6C3GDd+2DXWepQlBUR6GsIICHnBkw==",
-      "path": "selenium.webdriver/4.9.1",
-      "hashPath": "selenium.webdriver.4.9.1.nupkg.sha512"
+      "sha512": "sha512-MvgUaxeLqLOtRnNS+kHzqfOhLO+7ZEukhQMuS7ksQQPA2tGNXWhrRN3PTkTGuKhuodd9JkoZ4eCKVEQF6xPdmA==",
+      "path": "selenium.webdriver/4.10.0",
+      "hashPath": "selenium.webdriver.4.10.0.nupkg.sha512"
     },
-    "Selenium.WebDriver.ChromeDriver/114.0.5735.9000": {
+    "System.Configuration.ConfigurationManager/8.0.0-preview.5.23280.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BgBGrbMiyhq+wZjWfKE0t5A+TVlY5kbUj8BcxPSMjuGOW2CinaMNZq567ZjxDNDvnqJBKmx2mPa5Hkjolt28Lg==",
-      "path": "selenium.webdriver.chromedriver/114.0.5735.9000",
-      "hashPath": "selenium.webdriver.chromedriver.114.0.5735.9000.nupkg.sha512"
+      "sha512": "sha512-HRlPUWAZbi9zJ7kkXeCz50907A4AYN4VawLiYNu0WkQHhr7HH9s3DVKDZMGMEdPZmwmg4hTQma7Yz5y/H64VuA==",
+      "path": "system.configuration.configurationmanager/8.0.0-preview.5.23280.8",
+      "hashPath": "system.configuration.configurationmanager.8.0.0-preview.5.23280.8.nupkg.sha512"
     },
     "System.Reflection.Metadata/1.6.0": {
       "type": "package",
@@ -477,6 +495,13 @@
       "sha512": "sha512-COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/8.0.0-preview.5.23280.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ycCVCV54oZ26V/sZsEtqkhdQLnJnZQYH0YpqjhVN9btvMzh1/2sDVUvaCHw4mUp+lJ9j+sp+DC1FalHRIPvdxA==",
+      "path": "system.security.cryptography.protecteddata/8.0.0-preview.5.23280.8",
+      "hashPath": "system.security.cryptography.protecteddata.8.0.0-preview.5.23280.8.nupkg.sha512"
     }
   }
 }

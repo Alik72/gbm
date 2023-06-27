@@ -394,7 +394,7 @@
           "lib/net6.0/WebDriver.Support.dll": {}
         }
       },
-      "Selenium.WebDriver/4.9.0": {
+      "Selenium.WebDriver/4.10.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
@@ -409,10 +409,23 @@
           "buildTransitive/Selenium.WebDriver.targets": {}
         }
       },
-      "Selenium.WebDriver.ChromeDriver/114.0.5735.1600": {
+      "System.Configuration.ConfigurationManager/8.0.0-preview.5.23280.8": {
         "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "8.0.0-preview.5.23280.8"
+        },
+        "compile": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
         "build": {
-          "build/Selenium.WebDriver.ChromeDriver.targets": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Reflection.Metadata/1.6.0": {
@@ -426,6 +439,22 @@
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/8.0.0-preview.5.23280.8": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       }
     }
@@ -1035,10 +1064,10 @@
         "selenium.support.nuspec"
       ]
     },
-    "Selenium.WebDriver/4.9.0": {
-      "sha512": "7MiV7cpu5LuM7bBhMz/a25Lb78rFyfl8v2G3q56TAtxdDJEj3WXaRMDyytrKq1YVZ7jaN3pygku0n0IsYfe/SQ==",
+    "Selenium.WebDriver/4.10.0": {
+      "sha512": "MvgUaxeLqLOtRnNS+kHzqfOhLO+7ZEukhQMuS7ksQQPA2tGNXWhrRN3PTkTGuKhuodd9JkoZ4eCKVEQF6xPdmA==",
       "type": "package",
-      "path": "selenium.webdriver/4.9.0",
+      "path": "selenium.webdriver/4.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1056,27 +1085,38 @@
         "manager/linux/selenium-manager",
         "manager/macos/selenium-manager",
         "manager/windows/selenium-manager.exe",
-        "selenium.webdriver.4.9.0.nupkg.sha512",
+        "selenium.webdriver.4.10.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
-    "Selenium.WebDriver.ChromeDriver/114.0.5735.1600": {
-      "sha512": "w1mAgzw+VctgX0fmuuoFp7cBlGhj0D+aQ5fNnT7P9ywySYIC8GF8rq82ge4Wf/U7KNH78srjgCvOdFnx1akTGg==",
+    "System.Configuration.ConfigurationManager/8.0.0-preview.5.23280.8": {
+      "sha512": "HRlPUWAZbi9zJ7kkXeCz50907A4AYN4VawLiYNu0WkQHhr7HH9s3DVKDZMGMEdPZmwmg4hTQma7Yz5y/H64VuA==",
       "type": "package",
-      "path": "selenium.webdriver.chromedriver/114.0.5735.1600",
+      "path": "system.configuration.configurationmanager/8.0.0-preview.5.23280.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "README.md",
-        "build/DefinePropertiesChromeDriver.targets",
-        "build/Selenium.WebDriver.ChromeDriver.targets",
-        "driver/linux64/chromedriver",
-        "driver/mac64/chromedriver",
-        "driver/mac64arm/chromedriver",
-        "driver/win32/chromedriver.exe",
-        "nupkg-icon.png",
-        "selenium.webdriver.chromedriver.114.0.5735.1600.nupkg.sha512",
-        "selenium.webdriver.chromedriver.nuspec"
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
+        "lib/net462/System.Configuration.ConfigurationManager.dll",
+        "lib/net462/System.Configuration.ConfigurationManager.xml",
+        "lib/net6.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net6.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net7.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net7.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net8.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net8.0/System.Configuration.ConfigurationManager.xml",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.8.0.0-preview.5.23280.8.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Reflection.Metadata/1.6.0": {
@@ -1099,6 +1139,41 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "System.Security.Cryptography.ProtectedData/8.0.0-preview.5.23280.8": {
+      "sha512": "ycCVCV54oZ26V/sZsEtqkhdQLnJnZQYH0YpqjhVN9btvMzh1/2sDVUvaCHw4mUp+lJ9j+sp+DC1FalHRIPvdxA==",
+      "type": "package",
+      "path": "system.security.cryptography.protecteddata/8.0.0-preview.5.23280.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Cryptography.ProtectedData.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net462/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net7.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net7.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "system.security.cryptography.protecteddata.8.0.0-preview.5.23280.8.nupkg.sha512",
+        "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1109,7 +1184,8 @@
       "NUnit.Analyzers >= 3.6.1",
       "NUnit3TestAdapter >= 4.5.0",
       "Selenium.Support >= 4.9.0",
-      "Selenium.WebDriver.ChromeDriver >= 114.0.5735.1600",
+      "Selenium.WebDriver >= 4.10.0",
+      "System.Configuration.ConfigurationManager >= 8.0.0-preview.5.23280.8",
       "coverlet.collector >= 6.0.0"
     ]
   },
@@ -1182,9 +1258,13 @@
             "target": "Package",
             "version": "[4.9.0, )"
           },
-          "Selenium.WebDriver.ChromeDriver": {
+          "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[114.0.5735.1600, )"
+            "version": "[4.10.0, )"
+          },
+          "System.Configuration.ConfigurationManager": {
+            "target": "Package",
+            "version": "[8.0.0-preview.5.23280.8, )"
           },
           "coverlet.collector": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

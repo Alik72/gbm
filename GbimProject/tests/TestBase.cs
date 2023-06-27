@@ -12,25 +12,16 @@ namespace WebGbimTests
 {
     public class TestBase
     {
-        
-        public ApplicationManager app;
-        
+
+        protected ApplicationManager app;
+
 
         [SetUp]
-        public void SetupTest()
+        public void SetupApplicationManager()
         {
-            app = new ApplicationManager();
-            
-           app.Auth.Login(new AccountDate("AUTH_RSA256_ffd3771ab1bd0de176deca52dbe546b342cec604.p12", "nii123"));
-            
+            app = ApplicationManager.GetInstance();
         }
 
-        [TearDown]
-        public void TeardownTest()
-        {
-           app.Stop();
-           
-        }
-        
+
     }
 }

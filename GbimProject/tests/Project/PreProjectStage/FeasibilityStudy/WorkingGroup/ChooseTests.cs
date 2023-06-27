@@ -16,21 +16,18 @@ using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 using System.IO;
 using OpenQA.Selenium.Interactions;
 
+
 namespace WebGbimTests
 {
     [TestFixture]
-    public class ChooseTests : TestBase
+    public class ChooseTests : AuthTestBase
 
     {
         [Test]
         public void ChooseTest()
         {
             app.Navigator
-                .GoToTypeCustomer()
-                .GoToProjectPage()
-                .GoToOneProject()
-                .GoToPreProjectStage()
-                .GoToTabTEO()
+                .GoToPreProjectStageTEO()
                 .GoToTabWorkGroup();
             app.WorkingGroupHelper
                 .InitChooset()
@@ -39,9 +36,6 @@ namespace WebGbimTests
                 .InitPackageDocumentsTEO()
                 .ChoosetPackageDocumentsTEO()
                 .SubmitPackageDocumentsTEO();
-
-            Thread.Sleep(25000);
-
         }
     }
 }

@@ -54,9 +54,13 @@ namespace WebGbimTests
             Click(By.XPath("//div/i"));
             
             InitTypeDocument();
+            
+            //Выбрать Технико-экономическое обоснование
+                 //Click(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Технико-экономическое обоснование'])[1]/following::span[1]"));
+                        
+            String nameElement = "Технико-экономическое обоснование";
+            SelectElementList(By.XPath("//li/span"), nameElement);
 
-            //Выбрать Пакет документа ТЭО
-            Click(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Техническое задание на ТЭО'])[1]/following::span[1]"));
             return this;
         }
         public WorkingGroupHelper SubmitPackageDocumentsTEO()
